@@ -1,0 +1,14 @@
+{
+  "name": "waic-phm-maturity-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WAIC predictive maintenance maturity assessment H5 app.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/assessment.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

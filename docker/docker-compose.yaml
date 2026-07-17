@@ -1,0 +1,18 @@
+services:
+  app:
+    image: waic-phm-maturity-assessment:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "${PORT:-4173}:4173"
+    environment:
+      PORT: "4173"
+      WAIC_ADMIN_TOKEN: ${WAIC_ADMIN_TOKEN}
+      WAIC_DATA_DIR: /app/data
+    volumes:
+      - waic_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  waic_data:

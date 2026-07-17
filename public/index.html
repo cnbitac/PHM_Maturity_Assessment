@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#f97316">
-    <title>预测维护成熟度评估</title>
+    <title>预测维护成熟度评估 | Predictive Maintenance Readiness Assessment</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
@@ -14,8 +14,14 @@
           <span></span><span></span><span></span>
         </div>
         <div>
-          <div class="eyebrow">WAIC 展位快测</div>
-          <div class="brand-title">预测维护成熟度评估</div>
+          <div class="eyebrow">
+            <span class="copy-zh">WAIC 展位快测</span>
+            <span class="copy-en" lang="en">WAIC Booth Quick Check</span>
+          </div>
+          <div class="brand-title">
+            <span class="copy-zh">预测维护成熟度评估</span>
+            <span class="copy-en" lang="en">Predictive Maintenance Readiness Assessment</span>
+          </div>
         </div>
       </header>
 
@@ -29,68 +35,112 @@
             <i style="--h: 52%"></i>
             <i style="--h: 70%"></i>
           </div>
-          <h1>90秒判断：现在该不该做预测维护？</h1>
+          <h1>
+            <span class="copy-zh">90秒判断：现在该不该做预测维护？</span>
+            <span class="copy-en" lang="en">Find out in 90 seconds: Is predictive maintenance right for you now?</span>
+          </h1>
           <p class="lead">
-            基于设备价值、停机影响、数据基础、团队能力四个维度，得到一份现场可解读的行动建议。
+            <span class="copy-zh">基于设备价值、停机影响、数据基础、团队能力四个维度，得到一份现场可解读的行动建议。</span>
+            <span class="copy-en" lang="en">Assess equipment value, downtime impact, data foundation, and team capability to receive a practical recommendation on site.</span>
           </p>
-          <div class="fact-row" aria-label="评估信息">
-            <div><strong>12</strong><span>道题</span></div>
-            <div><strong>4</strong><span>个维度</span></div>
-            <div><strong>1</strong><span>个建议</span></div>
+          <div class="fact-row" aria-label="评估信息 / Assessment information">
+            <div><strong>12</strong><span class="copy-zh">道题</span><span class="copy-en" lang="en">Questions</span></div>
+            <div><strong>4</strong><span class="copy-zh">个维度</span><span class="copy-en" lang="en">Dimensions</span></div>
+            <div><strong>1</strong><span class="copy-zh">个建议</span><span class="copy-en" lang="en">Recommendation</span></div>
           </div>
           <button class="primary-action" id="startButton" type="button">
-            开始评估
+            <span class="copy-zh">开始评估</span>
+            <span class="copy-en" lang="en">Start Assessment</span>
           </button>
-          <p class="subtle">适合制造企业老板、设备负责人、生产负责人现场快速判断。</p>
+          <p class="subtle">
+            <span class="copy-zh">适合制造企业老板、设备负责人、生产负责人现场快速判断。</span>
+            <span class="copy-en" lang="en">A quick on-site check for manufacturing leaders, equipment managers, and production managers.</span>
+          </p>
         </section>
 
         <section class="screen" data-screen="lead">
           <div class="screen-heading">
-            <span class="step-chip">进入评估</span>
-            <h2>留下基本信息</h2>
-            <p>仅用于生成本次评估记录和会后沟通，不做无关用途。</p>
+            <span class="step-chip">
+              <span class="copy-zh">进入评估</span>
+              <span class="copy-en" lang="en">Assessment Details</span>
+            </span>
+            <h2>
+              <span class="copy-zh">留下基本信息</span>
+              <span class="copy-en" lang="en">Enter Your Details</span>
+            </h2>
+            <p>
+              <span class="copy-zh">仅用于生成本次评估记录和会后沟通，不做无关用途。</span>
+              <span class="copy-en" lang="en">Used only to create this assessment record and support professional follow-up.</span>
+            </p>
           </div>
 
           <form id="leadForm" class="lead-form" novalidate>
             <label>
-              <span>姓名</span>
-              <input name="name" autocomplete="name" placeholder="请输入姓名" required>
+              <span class="field-label">
+                <span class="copy-zh">姓名</span>
+                <span class="copy-en" lang="en">Name</span>
+              </span>
+              <input name="name" autocomplete="name" placeholder="姓名 / Name" required>
             </label>
             <label>
-              <span>工作单位</span>
-              <input name="company" autocomplete="organization" placeholder="请输入公司或工厂名称" required>
+              <span class="field-label">
+                <span class="copy-zh">工作单位</span>
+                <span class="copy-en" lang="en">Company</span>
+              </span>
+              <input name="company" autocomplete="organization" placeholder="公司或工厂 / Company or plant" required>
             </label>
             <label>
-              <span>电话</span>
-              <input name="phone" inputmode="tel" autocomplete="tel" placeholder="请输入手机号或座机" required>
+              <span class="field-label">
+                <span class="copy-zh">电话</span>
+                <span class="copy-en" lang="en">Phone</span>
+              </span>
+              <input name="phone" inputmode="tel" autocomplete="tel" placeholder="手机号或座机 / Phone number" required>
             </label>
             <label class="consent-row">
               <input name="consent" type="checkbox" required>
-              <span>我同意将以上信息用于本次评估记录和后续专业沟通。</span>
+              <span>
+                <span class="copy-zh">我同意将以上信息用于本次评估记录和后续专业沟通。</span>
+                <span class="copy-en" lang="en">I agree that this information may be used for this assessment record and professional follow-up.</span>
+              </span>
             </label>
             <div class="form-actions">
-              <button class="ghost-action" type="button" data-back-intro>返回</button>
-              <button class="primary-action" type="submit">进入答题</button>
+              <button class="ghost-action" type="button" data-back-intro>
+                <span class="copy-zh">返回</span>
+                <span class="copy-en" lang="en">Back</span>
+              </button>
+              <button class="primary-action" type="submit">
+                <span class="copy-zh">进入答题</span>
+                <span class="copy-en" lang="en">Start Questions</span>
+              </button>
             </div>
           </form>
         </section>
 
         <section class="screen" data-screen="quiz">
           <div class="quiz-top">
-            <button class="icon-button" type="button" id="questionBackButton" aria-label="上一题">
+            <button class="icon-button" type="button" id="questionBackButton" aria-label="上一题 / Previous question">
               <span aria-hidden="true">‹</span>
             </button>
-            <div class="progress-wrap" aria-label="答题进度">
+            <div class="progress-wrap" aria-label="答题进度 / Assessment progress">
               <div class="progress-meta">
-                <span id="dimensionLabel">设备价值</span>
+                <span id="dimensionLabel">
+                  <span class="copy-zh">设备价值</span>
+                  <span class="copy-en" lang="en">Equipment Value</span>
+                </span>
                 <span id="questionCounter">1 / 12</span>
               </div>
               <div class="progress-track"><div id="progressBar"></div></div>
             </div>
           </div>
           <article class="question-panel">
-            <span class="step-chip" id="dimensionPrompt">有没有值得保护的关键设备</span>
-            <h2 id="questionTitle">题目加载中</h2>
+            <span class="step-chip" id="dimensionPrompt">
+              <span class="copy-zh">有没有值得保护的关键设备</span>
+              <span class="copy-en" lang="en">Are there critical assets worth protecting?</span>
+            </span>
+            <h2 id="questionTitle">
+              <span class="copy-zh">题目加载中</span>
+              <span class="copy-en" lang="en">Loading question...</span>
+            </h2>
             <p id="questionHint"></p>
             <div id="optionsList" class="options-list"></div>
           </article>
